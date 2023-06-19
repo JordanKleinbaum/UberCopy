@@ -1,0 +1,239 @@
+ .driverimageandthings {
+      margin-top: 65px;
+    }
+  
+  
+  /* BACKGROUND IMAGE */
+  
+  
+  .bgphotodiv {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 700px;
+    transform: scaleX(1);
+    padding-bottom: 0px;
+    object-fit: cover;
+  }
+  
+  
+  .bgphoto {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  
+  .whitebox {
+    background-color: white;
+    width: 570px;
+    position: absolute;
+    top: 65px;
+    left: 380px;
+  }
+  
+  
+  /* TOP SECTION OF WHITE BOX */
+  
+  
+  .toprow {
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    background-color: rgb(249, 249, 249);
+    position: relative;
+  }
+  
+  
+  .drivediv,
+  .mealdiv,
+  .journeydiv {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .icon-text {
+    transition: all 0.25s ease;
+  }
+  
+  
+  .icon-text:hover {
+    color: rgb(100, 100, 100);
+  }
+  
+  
+  .threeicons {
+    width: 25px;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* BOTTOM SECTION OF WHITE BOX */
+  
+  
+  .bottomsection {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  
+  .get-in {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  
+  .smalltext {
+    color: rgb(121, 121, 121);
+    margin-bottom: 30px;
+  }
+  
+  
+  .signuptodrive {
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    background-color: black;
+    font-size: 15px;
+    width: 165px;
+    padding: 14px 14px;
+    font-weight: bold;
+    transition: opacity 0.25s ease;
+    margin-bottom: 30px;
+  }
+  
+  
+  .signuptodrive:hover {
+    opacity: 0.8;
+  }
+  
+  
+  .learnmore {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: opacity 0.25s ease;
+  }
+  
+  
+  .learnmore:hover {
+    opacity: 0.8;
+  }
+  
+  
+  /* MEDIA QUERIES */
+  
+  
+  @media (width <= 1310px) {
+    .bgphoto {
+      margin-top: 352px;
+      height: 480px;
+    }
+    .whitebox {
+      top: 0px;
+      left: 0px;
+      width: 100%;
+    }
+    .toprow {
+      height: 100px;
+      justify-content: flex-start;
+      padding-left: 35px;
+      column-gap: 2em;
+    }
+  
+  
+    .get-in {
+      font-size: 40px;
+    }
+  
+  
+    .signuptodrive {
+      margin-bottom: 0px;
+    }
+  
+  
+    .signandlearndiv {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px;
+      gap: 1em;
+    }
+  }
+  
+  
+  @media (width <= 510px) {
+    .signandlearndiv {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  /* THIN SKYLINE SECTION */
+  .skylineimgdiv{
+    position: relative;
+    height: 270px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skylineimg{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;    
+  }
+
+
+  .alltext{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+  }
+  
+  .theuber{
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+  }
+
+  .aplatform{
+    color: rgb(121, 121, 121);
+  }
+
+  .getstarted{
+    cursor: pointer;
+    width: 140px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.25s ease;
+  }
+
+  .getstarted:hover{
+    background-color: rgb(33, 33, 33);
+  }
+
+  /* MEDIA QUERIES */
+
+  @media (width <= 800px) {
+    .alltext{
+      padding-left: 15px;
+      gap: 15px ;
+    }
+  }
